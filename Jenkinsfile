@@ -8,5 +8,10 @@ pipeline {
                 sh 'uname -a'
             }
         }
+        stage('deploy') {
+            steps {
+                sh 'echo "Deployment Step"'
+            }
+        }
     }
 }
